@@ -5,9 +5,9 @@
 
 {% block headerstyle %}
     {% if NEST_HEADER_IMAGES %}
-    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; background-size: cover;">
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
     {% else %}
-    <div class="header-container gradient">
+    <div class="header-container-article gradient">
     {% endif %}
 {% endblock headerstyle %}
 
@@ -15,11 +15,14 @@
     <div class="container header-wrapper">
         <div class="row">
               <div class="col-lg-12">
-                  <div class="header-content">
+                  <!--<div class="header-content">
                       <h1 class="header-title text-uppercase">{{ NEST_TAGS_HEADER_TITLE }}</h1>
                       <div class="header-underline"></div>
                       <p class="header-subtitle header-subtitle-homepage">{{ NEST_TAGS_HEADER_SUBTITLE }}</p>
-                  </div>
+                  </div>-->
+				<div class="header-vertical-line"></div>
+				<h1 class="header-title-article">{{ NEST_TAGS_HEADER_TITLE }}</h1>
+				<p class="header-date-article">{{ NEST_TAGS_HEADER_SUBTITLE }}</p>
               </div>
         </div>
     </div>
@@ -32,8 +35,8 @@
             <dl class="dl-horizontal">
             	{% for tag, articles in tags|sort %}
             	{% set articles_count = articles | count %}
-            	<dt><span class="label label-default">{{ articles | count }}</span> {% if articles_count == 1 %}article{% else %}articles{% endif %} {{ NEST_TAGS_CONTENT_LIST }}</dt>
-            	<dd><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></dd>
+            	<dt style="width: 60px;"><span class="label label-default">{{ articles | count }}</span></dt>
+            	<dd style="margin-left: 80px;"><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></dd>
             	{% endfor %}
             </dl>
         </div>
