@@ -34,7 +34,15 @@
 {% block content %}
     <div class="container content">
         {{ article.content }}
-
+		<br/><br/>
+		<p style="color: #eb2344;"><b>
+		{% if article.reprint %}
+		本文为转载文章，原文链接：<a href="{{ article.reprint }}" target="_blank">{{ article.reprint }}</a>
+		{% else %}
+		原创文章，欢迎转载，请保留出处。有任何错误、疑问或者建议，欢迎指出。
+		{% endif %}
+		</b></p>
+		<br/><br/>
         {% if article.related_posts %}
             <h4>Articles connexes</h4>
             <dl class="dl-horizontal">
