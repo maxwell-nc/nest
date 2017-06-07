@@ -36,7 +36,7 @@
 					<p class="header-date-article">
 					<!-- {{ NEST_ARTICLE_HEADER_BY }} {% for author in article.authors %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}{% endfor %}, --> 
 					{{ article.locale_date }}{% if article.modified %}, {{ NEST_ARTICLE_HEADER_MODIFIED }} {{ article.locale_modified }}{% endif %}&nbsp;&nbsp;|&nbsp;&nbsp;
-					{{ NEST_ARTICLE_HEADER_IN }} <a href="{{ SITEURL }}/{{ category.url }}">{{ article.category|capitalize }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-folder-open mr5" aria-hidden="true"></span> <a href="{{ SITEURL }}/{{ category.url }}">{{ article.category|capitalize }}</a>&nbsp;&nbsp;
 					<span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
                          {% for tag in article.tags|sort %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
               </div>
@@ -46,7 +46,7 @@
 {% endblock header %}
 
 {% block content %}
-	<div id="top_div" onclick="javascript:window.scrollTo(0,0)">▲ 回到顶部</div>
+	<div id="top_div" onclick="javascript:window.scrollTo(0,0)"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> 回到顶部</div>
     <div id="contents" class="container content">
 		<div id="toc"></div>
         {{ article.content }}
