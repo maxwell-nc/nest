@@ -12,12 +12,12 @@ Nest is a theme for [Pelican](https://getpelican.com) 3.5+, a static site genera
 ### 文章内容
 增加了目录显示功能（智能识别层次）
 
-![Nest Article View](2.jpg)
+![Nest Article View](1.jpg)
 
 ### 返回顶部
 增加文章滚动后返回顶部功能
 
-![Nest Article View](3.jpg)
+![Nest Article View](2.jpg)
 
 ## Features
 
