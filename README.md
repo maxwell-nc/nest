@@ -4,15 +4,20 @@ Nest is a theme for [Pelican](https://getpelican.com) 3.5+, a static site genera
 
 我的 [Github Pages](https://maxwell-nc.github.io/) 使用到主题修改，欢迎访问，这个主题由于是自用修改，所有有些地方只有硬编码修改了，没有做通用地处理，如果需要的朋友可以自行修改。
 
-## Screenshots
+# Live
+[https://maxwell-nc.github.io/](https://maxwell-nc.github.io/)
 
-### 主页
-
-![Nest Index View](1.jpg)
+## Some Additions
 
 ### 文章内容
+增加了目录显示功能（智能识别层次）
 
 ![Nest Article View](2.jpg)
+
+### 返回顶部
+增加文章滚动后返回顶部功能
+
+![Nest Article View](3.jpg)
 
 ## Features
 
