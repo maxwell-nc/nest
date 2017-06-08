@@ -10,14 +10,19 @@ Nest is a theme for [Pelican](https://getpelican.com) 3.5+, a static site genera
 ## Some Additions
 
 ### 文章内容
-增加了目录显示功能（智能识别层次）
+主页增强
 
-![Nest Article View](1.jpg)
+![Nest Article View](https://raw.githubusercontent.com/maxwell-nc/nest/master/1.jpg)
+
+### 返回顶部
+增加文章目录（智能识别层次）
+
+![Nest Article View](https://raw.githubusercontent.com/maxwell-nc/nest/master/2.jpg)
 
 ### 返回顶部
 增加文章滚动后返回顶部功能
 
-![Nest Article View](2.jpg)
+![Nest Article View](https://raw.githubusercontent.com/maxwell-nc/nest/master/3.jpg)
 
 ## Features
 
@@ -44,9 +49,6 @@ The min-height for the background header is 360px. The image is displayed using 
 THEME = 'Theme/nest'
 
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
-
-# Minified CSS
-NEST_CSS_MINIFY = False
 
 # Add items to top menu before pages
 MENUITEMS = [('主页', '/'),('博文目录','/categories.html'),('标签','/tags.html'),('订阅',FEED_ALL_ATOM)]
@@ -107,4 +109,3 @@ NEST_TAG_HEADER_TITLE = u'标签'
 The theme uses external softwares, scripts, libraries and artworks:
 
 * [Bootstrap](http://getbootstrap.com/) 3.x.x
-* [Open Sans Font](http://www.google.com/fonts/specimen/Open+Sans)
